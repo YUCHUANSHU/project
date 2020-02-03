@@ -5,6 +5,7 @@
     <title>登录|注册</title>
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate static/css/translate/element.css">
     <style>
             main {
                     background: linear-gradient(to right top,rgba(38,50,105,0.78),rgba(255,152,0,0.45)),url(imgs/bg.jpg)center center no-repeat;
@@ -98,15 +99,17 @@
                     transform: translate(-50%,-50%) rotateY(180deg);
                     backface-visibility: hidden;
                     transition: all 1s;
-            }    
+            }  
+          
     </style>
+
 </head>
 <body>
     <header>
             <a class="login" href="#"><i class="fa fa-user-circl"></i></a>
     </header>
     <main>
-            <div class="flip-modal login">
+            <div class="flip-modal register" style="display:none;">
                 <div class="modal modal-login">
                         <a class="close" href="#"><i class="fa fa-close"></i></a>
                         <div class="tabs">
@@ -158,7 +161,7 @@
                         </div>
                 </div>
             </div>
-    </main>
+    </main>     
     <script>
             function $(selector){
                     return document.querySelector(selector)
@@ -250,6 +253,39 @@
                 }
                 this.submit()
         })
-    </script> 
+    </script>
+    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+        <div style="padding: 8px;">
+                <div>
+                        <div class="logo">
+                                <img src="https://www.gstatic.com/images/branding/product/1x/translate 24dp.png" width="20" height="20" alt="Google 翻译">
+                        </div>
+                </div>
+        </div>
+        <div class="top" style="padding: 8px;float: left;width: 100%;">
+                <h1 class="title gray">原文</h1>
+        </div>
+        <div class="middle" style="padding: 8px;">
+                <div class="original-text"></div>
+        </div>
+        <div class="bottom" style="padding: 8px">
+                <div class="activity-links">
+                        <span class="activity-link">提供更好的翻译建议</span>
+                        <span class="activity-link"></span>
+                </div>
+                <div class="started-activity-container">
+                        <hr style="color: #CCC;background-color:#CCC;height: 1px; border: none;">
+                        <div class="activity-root"></div>
+                </div>
+        </div>
+        <div class="status-message" style="display: none;"></div>
+    </div>
+    <div class="goog-te-spinner-pos">
+            <div class="goog-te-spinner-animation">
+                <svg xmlns="https://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66">
+                        <circle class="goog-te-spinner-path" fill="none" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                </svg> 
+            </div>
+    </div> 
 </body>
 </html>
